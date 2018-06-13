@@ -38,6 +38,8 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Dqcjc-LFsAutgeebY7zScpQ1GLYSWnE&callback=initMap"
+  type="text/javascript"></script>
   </head>
   <body>
     <div id="map-canvas"></div>
