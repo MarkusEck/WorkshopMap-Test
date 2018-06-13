@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
   <head>
   <style>
-    #map-canvas { width:500px; height:400px; }
+    #map-canvas { width:1800; height:1000; }
     .layer-wizard-search-label { font-family: sans-serif };
   </style>
   <script type="text/javascript"
