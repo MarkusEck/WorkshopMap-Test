@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
   <style>
-    #map-canvas { width:1800; height:1000; }
+    #map-canvas { width:1000px; height:700px; }
     .layer-wizard-search-label { font-family: sans-serif };
   </style>
   <script type="text/javascript"
@@ -13,14 +14,14 @@
     var layer_1;
     function initialize() {
       map = new google.maps.Map(document.getElementById('map-canvas'), {
-        center: new google.maps.LatLng(52.57824301592067, 13.470730853899568),
-        zoom: 9,
+        center: new google.maps.LatLng(52.45874446186184, 13.330655170305818),
+        zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       });
       layer_0 = new google.maps.FusionTablesLayer({
         query: {
-          select: "col2",
-          from: "1jVL2mA6AsY7kwVWHt14gCIzI5yeTtz9K862QvBjX"
+          select: "col2>>0",
+          from: "1Ce0h6WuFW5nP60EhgU7Nzj6s0vvTM7MZxfd02lx0"
         },
         map: map,
         styleId: 2,
@@ -38,8 +39,6 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Dqcjc-LFsAutgeebY7zScpQ1GLYSWnE&callback=initMap"
-  type="text/javascript"></script>
   </head>
   <body>
     <div id="map-canvas"></div>
